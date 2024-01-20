@@ -137,8 +137,8 @@ async def wizz(ctx, amount=20):
     for i in range(25):
       for channel in ctx.guild.channels:
         try:
-          await channel.send(f"{message}")
-        )
+          await channel.send(random.choice(MESSAGE_CONTENTS)
+          )
           print(f"{channel.name} spammed")
         except:
           print(f"{channel.name} not spammed")
