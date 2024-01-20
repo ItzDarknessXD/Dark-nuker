@@ -14,7 +14,7 @@ client = commands.Bot(command_prefix="?", intents = discord.Intents.all())
 
 
 
-token = input(f"\n> Token [~]: ")
+token = input(f"\n> Bot Token [~]: ")
 
 
 CHANNEL_NAMES = ["Raidd By Darkness " , " ez kidd"]
@@ -167,7 +167,7 @@ async def kick(ctx):
 @client.command()
 async def help(ctx, *args):
     await ctx.message.delete()
-    retStr = str("""```fix\n❄️ ?dark - nukes server\n\n❄️ ?ban - banall (non threaded)\n\n❄️ |?kick - kickall\n\n❄️ ?roles - spams roles\n\n❄️ ?emojidel - deletes emojis\n\n❄️ ?dmall - dms everyone in guild\n\n❄️ ?name - changes guild name\n\n❄️ ?admin - gives all admin ```""")
+    retStr = str("""```fix\n❄️ ?wizz - nukes server\n\n❄️ ?ban - banall (non threaded)\n\n❄️ |?kick - kickall\n\n❄️ ?roles - spams roles\n\n❄️ ?emojidel - deletes emojis\n\n❄️ ?dmall - dms everyone in guild\n\n❄️ ?name - changes guild name\n\n❄️ ?admin - gives all admin ```""")
     embed = discord.Embed(color=0xfffafa,title="Discord Nuker ❄️")
     embed.add_field(name="Help ⚠️",value=retStr)
     embed.set_footer(text=f'Darkness OG')
